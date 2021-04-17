@@ -10,9 +10,10 @@
               <div class="card-header">
                 <h1 class="box-title">Data Penulis</h1>
                 <a href="{{route('admin.auhtor.create')}}" class="btn btn-primary"> Tambah Penulis</a>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+                  @include('admin.template.partials.alert')
                 <table id="author" class="table table-bordered table-striped">
                   <thead>
                   <tr>
