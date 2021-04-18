@@ -7,8 +7,8 @@
     $("button").on('click', function(e) {
         e.preventDefault();
 
-        // var href = $(this).attr("href");
-        // console.log(href)
+        var href = $(this).attr("href");
+        console.log(href)
 
         swal({
             title: "Apakah kamu yakin ingin hapus data ini?",
