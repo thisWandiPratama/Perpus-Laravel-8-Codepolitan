@@ -16,10 +16,13 @@
 
 
         <div class="content-wrapper">
-        <!-- Main content -->
-        <section class="content">
-            @yield('content')
-        </section>
+            <!-- Content Header (Page header) -->
+            @include('admin.template.partials.content-head')
+
+            <!-- Main content -->
+            <section class="content">
+                @yield('content')
+            </section>
         </div>
     </div>
     <!-- /.content-wrapper -->

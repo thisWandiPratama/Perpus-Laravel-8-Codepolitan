@@ -13,7 +13,6 @@
             </div>
             <!-- /.card-header -->
             <div class="card-body">
-                  @include('admin.template.partials.alert')
                 <table id="author" class="table table-bordered table-striped">
                   <thead>
                   <tr>
@@ -44,6 +43,8 @@
 @endsection
 
 @push('scripts')
+<script src='{{asset('assets/plugins/bootstrap-notify.min.js')}}'></script>
+@include('admin.template.partials.alerts')
 <script>
     $(function(){
         $('#author').DataTable({

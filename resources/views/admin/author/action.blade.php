@@ -4,11 +4,11 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
 
-    $("button#delete").on('click', function(e) {
+    $("button").on('click', function(e) {
         e.preventDefault();
 
-        var href = $("#delete").attr("href");
-        console.log(href)
+        // var href = $(this).attr("href");
+        // console.log(href)
 
         swal({
             title: "Apakah kamu yakin ingin hapus data ini?",
@@ -16,16 +16,16 @@
             icon: "warning",
             buttons: true,
             dangerMode: true,
-            })
-            .then((willDelete) => {
+        })
+        .then((willDelete) => {
+            console.log(willDelete)
             if (willDelete) {
+
                 document.getElementById('deleteForm').action = href;
                 document.getElementById('deleteForm').submit();
                 swal("Berhasil! Data telah terhapus!", {
                 icon: "success",
                 });
-            } else {
-                swal("Data kamu masih aman!");
             }
     });
 })
