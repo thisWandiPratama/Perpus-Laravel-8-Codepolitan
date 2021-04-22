@@ -9,7 +9,7 @@
             <div class="card">
               <div class="card-header">
                 <h1 class="box-title">Data Penulis</h1>
-                <a href="{{route('admin.auhtor.create')}}" class="btn btn-primary"> Tambah Penulis</a>
+                <a href="{{route('admin.author.create')}}" class="btn btn-primary"> Tambah Penulis</a>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
@@ -50,7 +50,7 @@
         $('#author').DataTable({
             processing : true,
             serverSide: true,
-            ajax: '{{route('admin.auhtor.data')}}',
+            ajax: '{{route('admin.author.data')}}',
             columns : [
                 {data : 'DT_RowIndex', orderable: false, searchabel: false},
                 {data : 'name'},

@@ -1,5 +1,5 @@
-<a href="{{route('admin.auhtor.edit', $model) }}" class="btn btn-warning">Edit</a>
-<button href="{{route('admin.auhtor.destroy', $model) }}" class="btn btn-danger" id="delete">Hapus</button>
+<a href="{{route('admin.author.edit', $model) }}" class="btn btn-warning">Edit</a>
+<button href="{{route('admin.author.destroy', $model) }}" class="btn btn-danger" id="delete">Hapus</button>
 
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>

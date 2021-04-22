@@ -17,7 +17,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-header">Fitur</li>
           <li class="nav-item">
-              <a href="{{route('admin.auhtor.index')}}" class="nav-link">
+              <a href="{{route('admin.author.index')}}" class="nav-link">
                   <i class="nav-icon fa fa-book"></i>
                   <p>
                     Penulis
