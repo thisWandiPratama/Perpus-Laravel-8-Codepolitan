@@ -11,5 +11,6 @@ Route::get('/','HomeController@index')->name('dashboard');
 // Route::put('/author/{author}','AuthorController@update')->name('author.update');
 // Route::delete('/author/{author}','AuthorController@destroy')->name('author.destroy');
 Route::get('/author/data','DataController@authors')->name('author.data');
+Route::get('/book/data','DataController@books')->name('book.data');
 Route::resource('author', 'AuthorController');
 
