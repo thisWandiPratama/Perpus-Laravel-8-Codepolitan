@@ -15,7 +15,7 @@
                     has-error
                 @enderror">
                     <label for="">Nama</label>
-                    <input type="text" name='name' class="from-control" placeholder="Masukan Nama Penulis" value=" {{ old('name') ?? $author->name}}">
+                    <input type="text" name='name' class="form-control" placeholder="Masukan Nama Penulis" value=" {{ old('name') ?? $author->name}}">
                     @error('name')
                     <span class="help-block ">{{$message}}</span>
                     @enderror

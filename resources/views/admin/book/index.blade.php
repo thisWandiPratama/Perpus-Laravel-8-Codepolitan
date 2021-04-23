@@ -9,7 +9,7 @@
             <div class="card">
               <div class="card-header">
                 <h1 class="box-title">Data Buku</h1>
-                <a href="{{route('admin.author.create')}}" class="btn btn-primary"> Tambah Buku</a>
+                <a href="{{route('admin.book.create')}}" class="btn btn-primary"> Tambah Buku</a>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
